@@ -4,9 +4,11 @@
 // const menuBtn = document.querySelector("#open-menu-btn");
 // const closeBtn = document.querySelector("#close-menu-btn");
 
-
 // menuBtn.addEventlistener('click', () => {
 //     menu.style.display = "flex";
 //     closeBtn.style.display = "inline-block";
 //     menuBtn.style.display = "none";
 // })
+
+const navbar = document.querySelector(`.navbar`);
+console.log(navbar);
