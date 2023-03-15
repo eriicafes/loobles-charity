@@ -11,4 +11,11 @@
 // })
 
 const navbar = document.querySelector(`.navbar`);
-console.log(navbar);
+
+window.addEventListener(`scroll`, () => {
+  if (scrollY > 450) {
+    navbar.classList.add(`background`);
+  } else {
+    navbar.classList.remove(`background`);
+  }
+});
