@@ -43,23 +43,39 @@ button {
     border: none;
     padding: 0.3rem 1rem;
     @include flex(center, center, row);
+    transition: $transition;
 
     &.black {
         background: #000000;
         border: 1px solid #FFFFFF;
-        color: #FFFFFF
+        color: #FFFFFF;
+
+        &:hover {
+            background: $color-red;
+            color: #FFFFFF;
+        }
     }
 
     &.white {
         background: #FFFFFF;
         border: 1px solid #FFFFFF;
+
+        &:hover {
+            background: $color-red;
+            color: #FFFFFF;
+        }
+
     }
 
     &.red {
         color: #FFFFFF;
-        background: $color-darkred
-    }
+        background: $color-red ;
 
+        &:hover {
+            background: #FFFFFF;
+            color: #000000;
+        }
+    }
 }
 
 // NAVBAR
@@ -76,8 +92,7 @@ nav {
 
     ul {
         @include flex(center, space-between, row);
-        width: 80%;
-
+        width: 70%;
     }
 
     &.background {
@@ -163,10 +178,17 @@ nav {
                 }
 
                 a {
-                    background-color: $color-darkred;
+                    background-color: $color-red;
                     color: #FFFFFF;
                     padding: 0.5rem 1rem;
                     border-radius: 45px;
+                    transition: $transition;
+
+                    &:hover {
+                        color: #000000;
+                        background: #FFFFFF;
+                    }
+
                 }
             }
 
@@ -218,6 +240,13 @@ nav {
                     padding: 0.5rem 1rem;
                     border-radius: 45px;
                     border: 1px solid $color-darkred;
+                    transition: $transition;
+
+                    &:hover {
+                        color: #ffffff;
+                        background: $color-red ;
+                        border: none;
+                    }
                 }
             }
         }
@@ -274,6 +303,13 @@ nav {
                     padding: 0.5rem 1rem;
                     border-radius: 45px;
                     border: 1px solid $color-darkred;
+                    transition: $transition;
+
+                    &:hover {
+                        color: #ffffff;
+                        background: $color-red ;
+                        border: none;
+                    }
                 }
             }
         }
@@ -400,6 +436,14 @@ nav {
                 padding: 0.5rem 1rem;
                 border-radius: 45px;
                 border: 1px solid $color-black;
+                transition: $transition;
+
+                &:hover {
+                    color: #ffffff;
+                    background: $color-red ;
+                    border: none;
+                }
+
             }
         }
     }
@@ -420,6 +464,14 @@ nav {
             color: #FFFFFF;
             padding: 0.5rem 1.3rem;
             border-radius: 45px;
+            transition: $transition;
+
+            &:hover {
+                color: #000000;
+                background: #FFFFFF;
+                border: 1px solid $color-black;
+            }
+
         }
     }
 }
@@ -540,7 +592,7 @@ footer {
         padding: 8px 40px;
 
         ul {
-            width: 80%;
+            width: 40%;
         }
     }
 
@@ -677,7 +729,19 @@ footer {
     }
 }
 
-@media screen and (min-width: 900px) {}
+@media screen and (min-width: 900px) {
+
+    section,
+    header {
+        padding: 5rem 80px;
+    }
+
+
+    // NAVBAR
+    nav {
+        padding: 8px 80px;
+    }
+}
 
 @media screen and (min-width: 1200px) {
 
@@ -693,7 +757,7 @@ footer {
         padding: 8px 140px;
 
         ul {
-            width: 80%;
+            width: 30%;
         }
     }
 
@@ -729,16 +793,6 @@ footer {
 
                 button {
                     padding: 0.5rem 1.9rem;
-                    color: #FFFFFF;
-
-                    &:first-child {
-                        background: $color-darkred;
-                        border: none;
-                    }
-
-                    &:last-child {
-                        background: $color-black;
-                    }
                 }
             }
         }
@@ -751,7 +805,7 @@ footer {
         height: 500px;
 
         .container {
-            @include flex(center, center, row);
+            @include flex(flex-start, center, row);
             position: absolute;
             margin: 0 auto;
             left: 0;
@@ -761,7 +815,12 @@ footer {
             .card {
                 border-radius: 20px;
                 width: 321px;
-                padding: 1rem 14px;
+                padding: 2rem 14px;
+                height: 165px;
+                overflow-y: hidden;
+                justify-content: flex-start;
+                transition: ease-out 0.4s height;
+
 
                 .info {
                     h5 {
@@ -776,6 +835,10 @@ footer {
                 &.community {
                     background: linear-gradient(180.99deg, #000000 -23.64%, #FFFFFF 218.61%);
                     color: #FFFFFF;
+                }
+
+                &:hover {
+                    height: 460px;
                 }
             }
         }

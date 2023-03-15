@@ -37,19 +37,32 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  transition: all 400ms ease;
 }
 button.black {
   background: #000000;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
 }
+button.black:hover {
+  background: rgb(253, 0, 68);
+  color: #FFFFFF;
+}
 button.white {
   background: #FFFFFF;
   border: 1px solid #FFFFFF;
 }
+button.white:hover {
+  background: rgb(253, 0, 68);
+  color: #FFFFFF;
+}
 button.red {
   color: #FFFFFF;
-  background: rgb(212, 24, 75);
+  background: rgb(253, 0, 68);
+}
+button.red:hover {
+  background: #FFFFFF;
+  color: #000000;
 }
 
 nav {
@@ -71,7 +84,7 @@ nav ul {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  width: 80%;
+  width: 70%;
 }
 nav.background {
   background: rgba(255, 255, 255, 0.2);
@@ -152,10 +165,15 @@ nav.background {
   font-weight: 500;
 }
 .cards .container .card .info a {
-  background-color: rgb(212, 24, 75);
+  background-color: rgb(253, 0, 68);
   color: #FFFFFF;
   padding: 0.5rem 1rem;
   border-radius: 45px;
+  transition: all 400ms ease;
+}
+.cards .container .card .info a:hover {
+  color: #000000;
+  background: #FFFFFF;
 }
 .cards .container .card.get-involved, .cards .container .card.community {
   background: #FFFFFF;
@@ -201,6 +219,12 @@ nav.background {
   padding: 0.5rem 1rem;
   border-radius: 45px;
   border: 1px solid rgb(212, 24, 75);
+  transition: all 400ms ease;
+}
+.our-cause .container .info .btn a:hover {
+  color: #ffffff;
+  background: rgb(253, 0, 68);
+  border: none;
 }
 .our-cause .container .video {
   display: flex;
@@ -254,6 +278,12 @@ nav.background {
   padding: 0.5rem 1rem;
   border-radius: 45px;
   border: 1px solid rgb(212, 24, 75);
+  transition: all 400ms ease;
+}
+.about-us .container .info .btn a:hover {
+  color: #ffffff;
+  background: rgb(253, 0, 68);
+  border: none;
 }
 .about-us .container .img {
   display: flex;
@@ -361,6 +391,12 @@ nav.background {
   padding: 0.5rem 1rem;
   border-radius: 45px;
   border: 1px solid #000000;
+  transition: all 400ms ease;
+}
+.nft-section .ntfs .nft a:hover {
+  color: #ffffff;
+  background: rgb(253, 0, 68);
+  border: none;
 }
 .nft-section .about-loobles h2 {
   font-size: 1.2rem;
@@ -375,6 +411,12 @@ nav.background {
   color: #FFFFFF;
   padding: 0.5rem 1.3rem;
   border-radius: 45px;
+  transition: all 400ms ease;
+}
+.nft-section .about-loobles a:hover {
+  color: #000000;
+  background: #FFFFFF;
+  border: 1px solid #000000;
 }
 
 footer {
@@ -444,7 +486,7 @@ footer .socials img {
     padding: 8px 40px;
   }
   nav ul {
-    width: 80%;
+    width: 40%;
   }
   .header-section {
     height: 57vh;
@@ -523,6 +565,15 @@ footer .socials img {
     font-size: 1.1rem;
   }
 }
+@media screen and (min-width: 900px) {
+  section,
+  header {
+    padding: 5rem 80px;
+  }
+  nav {
+    padding: 8px 80px;
+  }
+}
 @media screen and (min-width: 1200px) {
   section,
   header {
@@ -532,7 +583,7 @@ footer .socials img {
     padding: 8px 140px;
   }
   nav ul {
-    width: 80%;
+    width: 30%;
   }
   .header-section {
     height: 100vh;
@@ -564,14 +615,6 @@ footer .socials img {
   }
   .header-section .info .btns button {
     padding: 0.5rem 1.9rem;
-    color: #FFFFFF;
-  }
-  .header-section .info .btns button:first-child {
-    background: rgb(212, 24, 75);
-    border: none;
-  }
-  .header-section .info .btns button:last-child {
-    background: #000000;
   }
   .cards {
     padding: 0;
@@ -580,7 +623,7 @@ footer .socials img {
   }
   .cards .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: row;
     position: absolute;
@@ -592,7 +635,11 @@ footer .socials img {
   .cards .container .card {
     border-radius: 20px;
     width: 321px;
-    padding: 1rem 14px;
+    padding: 2rem 14px;
+    height: 165px;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    transition: ease-out 0.4s height;
   }
   .cards .container .card .info h5 {
     width: auto;
@@ -602,6 +649,9 @@ footer .socials img {
   .cards .container .card.get-involved, .cards .container .card.community {
     background: linear-gradient(180.99deg, #000000 -23.64%, #FFFFFF 218.61%);
     color: #FFFFFF;
+  }
+  .cards .container .card:hover {
+    height: 460px;
   }
   .our-cause {
     padding-left: 80px;
