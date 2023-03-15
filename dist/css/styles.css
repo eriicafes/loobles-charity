@@ -1,0 +1,711 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  line-height: 1.7;
+  background-color: #ffffff;
+}
+
+section,
+header {
+  padding: 5rem 14px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border-radius: 45px;
+  border: none;
+  padding: 0.3rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+button.black {
+  background: #000000;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+button.white {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  padding: 8px 14px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 40%;
+}
+
+.header-section {
+  background: url(../images/header-image-1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 52vh;
+  color: #FFFFFF;
+}
+.header-section .info h2 {
+  font-size: 2rem;
+}
+.header-section .info p {
+  font-size: 0.8rem;
+}
+.header-section .info p.desktop {
+  display: none;
+}
+.header-section .info .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 70%;
+}
+
+.cards {
+  padding: 0;
+}
+.cards .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cards .container .card {
+  background: linear-gradient(197.34deg, #000000 3.37%, #4e4e4e 88.1%);
+  transition: all 400ms ease;
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 14px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.cards .container .card .img {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.cards .container .card .img img {
+  border-radius: 50%;
+}
+.cards .container .card .info h6 {
+  font-size: 1.4rem;
+}
+.cards .container .card .info h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.cards .container .card .info a {
+  background-color: rgb(212, 24, 75);
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  border-radius: 45px;
+}
+.cards .container .card.get-involved, .cards .container .card.community {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.our-cause {
+  text-align: center;
+  color: #000000;
+  background-image: url(../images/Vector\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-cause .title {
+  color: #7a7a7a;
+}
+.our-cause .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.our-cause .container .info h3 {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.our-cause .container .info h3 span {
+  color: rgb(212, 24, 75);
+}
+.our-cause .container .info p {
+  font-size: 0.9rem;
+}
+.our-cause .container .info .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.our-cause .container .info .btn a {
+  background: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 45px;
+  border: 1px solid rgb(212, 24, 75);
+}
+.our-cause .container .video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.our-cause .container .video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.about-us {
+  text-align: center;
+  color: #000000;
+}
+.about-us .title {
+  color: #7a7a7a;
+}
+.about-us .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+  padding: 1rem 0;
+}
+.about-us .container .info h3 {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.about-us .container .info h3 span {
+  color: rgb(212, 24, 75);
+}
+.about-us .container .info p {
+  font-size: 0.9rem;
+}
+.about-us .container .info .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.about-us .container .info .btn a {
+  background: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 45px;
+  border: 1px solid rgb(212, 24, 75);
+}
+.about-us .container .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+.about-us .container .img img {
+  width: 100%;
+  height: 100%;
+}
+.about-us .container .vid {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.about-us .container .vid video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+.team {
+  text-align: center;
+  color: #000000;
+  background-image: url(../images/Frame\ 2.png);
+  background-position: right;
+  background-size: cover;
+  height: 45rem;
+}
+.team .title {
+  color: #7a7a7a;
+}
+.team .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.team .container .info p {
+  font-size: 0.9rem;
+}
+.team .container .members {
+  margin-top: 20px;
+}
+.team .container .members .member {
+  margin-bottom: 20px;
+}
+.team .container .members .member img {
+  height: 120px;
+  width: 120px;
+}
+.team .container .members .member h3 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.team .container .members .member h3 a {
+  color: rgb(212, 24, 75);
+}
+.team .container .members .member h4 {
+  font-size: 0.8rem;
+}
+
+.nft-section {
+  text-align: center;
+  color: #000000;
+}
+.nft-section .title {
+  color: #7a7a7a;
+}
+.nft-section h3 {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.nft-section h3 span {
+  color: rgb(212, 24, 75);
+}
+.nft-section .ntfs {
+  margin-top: 20px;
+}
+.nft-section .ntfs .nft {
+  margin-bottom: 30px;
+}
+.nft-section .ntfs .nft .img {
+  margin-bottom: 20px;
+}
+.nft-section .ntfs .nft .img img {
+  width: 100%;
+  height: 100%;
+}
+.nft-section .ntfs .nft a {
+  background: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 45px;
+  border: 1px solid #000000;
+}
+.nft-section .about-loobles h2 {
+  font-size: 1.2rem;
+}
+.nft-section .about-loobles p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.nft-section .about-loobles a {
+  background: rgb(253, 0, 68);
+  color: #FFFFFF;
+  padding: 0.5rem 1.3rem;
+  border-radius: 45px;
+}
+
+footer {
+  background-color: #000000;
+  color: transparent;
+  text-align: center;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+}
+footer .socials {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+footer .socials img {
+  width: 35px;
+  height: 35px;
+  color: #FFFFFF;
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 361px) {
+  section,
+  header {
+    padding: 5rem 24px;
+  }
+  nav {
+    padding: 8px 24px;
+  }
+  .header-section {
+    height: 52vh;
+  }
+  .header-section .info h2 {
+    font-size: 2.3rem;
+  }
+  .header-section .info p {
+    font-size: 1rem;
+  }
+  .header-section .info .btns {
+    width: 50%;
+  }
+  .cards .container .card {
+    padding: 2rem 24px;
+  }
+  .our-cause .container .info h3 {
+    font-size: 1rem;
+  }
+  .our-cause .container .info p {
+    font-size: 0.9rem;
+  }
+  .about-us .container .info h3 {
+    font-size: 1rem;
+  }
+  .nft-section h3 {
+    font-size: 1.1rem;
+  }
+  .nft-section .about-loobles p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  section,
+  header {
+    padding: 5rem 40px;
+  }
+  nav {
+    padding: 8px 40px;
+  }
+  nav ul {
+    width: 30%;
+  }
+  .header-section {
+    height: 57vh;
+  }
+  .header-section .info {
+    padding-top: 3rem;
+  }
+  .header-section .info h2 {
+    font-size: 2.5rem;
+  }
+  .header-section .info p {
+    font-size: 1.3rem;
+    width: 60%;
+  }
+  .header-section .info .btns {
+    width: 28%;
+  }
+  .cards .container .card {
+    padding: 2rem 40px;
+  }
+  .cards .container .card .info h5 {
+    width: 60%;
+    margin: auto;
+  }
+  .our-cause .title {
+    font-size: 2.3rem;
+  }
+  .our-cause .container .info h3 {
+    font-size: 1.3rem;
+  }
+  .our-cause .container .info p {
+    font-size: 1.1rem;
+  }
+  .about-us .title {
+    font-size: 2.3rem;
+  }
+  .about-us .container .info h3 {
+    font-size: 1.3rem;
+  }
+  .about-us .container .info p {
+    font-size: 1.1rem;
+  }
+  .about-us .container .vid {
+    margin-bottom: 40px;
+  }
+  .team {
+    height: 45rem;
+  }
+  .team .title {
+    font-size: 2.3rem;
+  }
+  .team .container .info p {
+    font-size: 1.1rem;
+  }
+  .nft-section .title {
+    font-size: 2.3rem;
+  }
+  .nft-section h3 {
+    font-size: 1.3rem;
+  }
+  .nft-section .ntfs {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .nft-section .about-loobles h2 {
+    font-size: 1.4rem;
+  }
+  .nft-section .about-loobles p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section,
+  header {
+    padding: 5rem 140px;
+  }
+  nav {
+    padding: 8px 140px;
+  }
+  nav ul {
+    width: 20%;
+  }
+  .header-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .header-section .info {
+    width: 60%;
+  }
+  .header-section .info h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .header-section .info h2 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+  .header-section .info p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .header-section .info p.desktop {
+    display: block;
+  }
+  .header-section .info .btns {
+    width: 45%;
+  }
+  .header-section .info .btns button {
+    padding: 0.5rem 1.9rem;
+    color: #FFFFFF;
+  }
+  .header-section .info .btns button:first-child {
+    background: rgb(212, 24, 75);
+    border: none;
+  }
+  .header-section .info .btns button:last-child {
+    background: #000000;
+  }
+  .cards {
+    padding: 0;
+    position: relative;
+    height: 500px;
+  }
+  .cards .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -40px;
+  }
+  .cards .container .card {
+    border-radius: 20px;
+    width: 321px;
+    padding: 1rem 14px;
+  }
+  .cards .container .card .info h5 {
+    width: auto;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .cards .container .card.get-involved, .cards .container .card.community {
+    background: linear-gradient(180.99deg, #000000 -23.64%, #FFFFFF 218.61%);
+    color: #FFFFFF;
+  }
+  .our-cause {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .our-cause .title {
+    font-size: 2.4rem;
+  }
+  .our-cause .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .our-cause .container .info {
+    width: 35%;
+    text-align: left;
+  }
+  .our-cause .container .info h3 {
+    font-size: 2rem;
+  }
+  .our-cause .container .info p {
+    font-size: 1rem;
+  }
+  .our-cause .container .info .btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .our-cause .container .video {
+    width: 40%;
+    height: 50vh;
+  }
+  .about-us {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .about-us .title {
+    font-size: 2.4rem;
+  }
+  .about-us .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .about-us .container .info {
+    width: 35%;
+    text-align: left;
+  }
+  .about-us .container .info h3 {
+    font-size: 2rem;
+  }
+  .about-us .container .info p {
+    font-size: 1.2rem;
+  }
+  .about-us .container .info .btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  .about-us .container .img {
+    width: 40%;
+    height: 50vh;
+  }
+  .about-us .container .vid {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  .team {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .team .title {
+    font-size: 2.4rem;
+  }
+  .team .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .team .container .info p {
+    font-size: 1.2rem;
+    width: 80%;
+    margin: auto;
+  }
+  .team .container .members {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+    margin-top: 50px;
+  }
+  .team .container .members .member img {
+    height: 180px;
+    width: 180px;
+  }
+  .team .container .members .member h3 {
+    font-size: 1.5rem;
+  }
+  .team .container .members .member h4 {
+    font-size: 1rem;
+  }
+  .nft-section {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .nft-section .title {
+    font-size: 2.4rem;
+  }
+  .nft-section h3 {
+    font-size: 1.8rem;
+    width: 80%;
+    margin: auto;
+  }
+  .nft-section .ntfs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80%;
+    margin: 20px auto;
+  }
+  .nft-section .about-loobles h2 {
+    font-size: 1.8rem;
+  }
+  .nft-section .about-loobles p {
+    font-size: 1.3rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
